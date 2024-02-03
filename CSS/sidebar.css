@@ -1,0 +1,115 @@
+:root{
+    --message:rgba(0,0,0,0,.6);
+    --message-font-size:0.8rem;
+    --sidebar-title-size:0.8rem;
+    --message-font-weight:500;
+    --list-background:#e9e5df;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    border-radius: 10px;
+    border:2px solid black
+}
+.profile-header{
+    background-image: url('/img/background.jpg') ;
+    height:70px;
+}
+.sidebar-first-col> .profile-info{
+    text-align: center;
+    padding:0px 20px;
+    padding-bottom: 10px;
+
+}
+.sidebar-first-col{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border:2px solid rgba (0,0,0,.15);
+    margin-bottom:10px;
+    width:100%;
+    background-color: white;
+}
+.profile-info > p{
+    padding:2px;
+}
+.connection{
+    padding:8px;
+    width: 100%;
+
+}
+.viewed{
+    padding:8px;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+.viewed:hover{
+    background:var(--list-background);
+    cursor: pointer;
+}
+.connection:hover{
+    background:var(--list-background);
+    cursor: pointer;
+}
+.sidebar-footer{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+}
+.sidebar-footer > i{
+    margin-right: 10px;
+    font-size: medium;
+
+}
+.sidebar-access{
+    padding:10px;
+    font-size: var(--sidebar-title-size);
+    border:1px solid lightgrey;
+    border-left:none;
+    width:100%;
+    border-right:none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar-access:hover{
+    cursor: pointer;
+    background-color: var(--list-background);
+}
+a:hover{
+    color:blue;
+}
+.sidebar-second-col{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: fit-content;
+    flex-wrap: wrap;
+    border: 2px solid rgba(0,0,0,.15);
+    background-color:white;
+}
+.title-text:hover{
+    text-decoration: underline;
+}
+.sidebar-title{
+    margin:10px;
+    font-size: var(--message-font-size);
+}
+.sidebar-second-text{
+    padding:3px 10px;
+    font-size: 0.9rem;
+    color: grey;
+    font-weight: 500;
+
+}
+.sidebar-second-text:hover{
+    background-color: var(--list-background);
+}
+.sidebar-second-col, .sidebar-first-col{
+    border-radius: 8px;
+}

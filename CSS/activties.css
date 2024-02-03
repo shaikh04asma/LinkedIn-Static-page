@@ -1,0 +1,235 @@
+:root{
+    --message:rgba(0,0,0,0,0.6);
+    --messahe-font-size:0.8rem;  
+    --message-title-size:0.9rem;
+    --message-font-weight:600;
+    --list-background:#e9e5df;
+}
+.new-list{
+    background-color: white;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1px 10px ;
+    justify-content: center;
+    width: 100%;
+}
+.new-list:hover{
+    background-color: var(--list-background);
+    cursor: pointer;
+}
+.activity{
+    background-color: var(--list-background);
+    border:none
+}
+.news{
+    border:2px solid lightgrey;
+    height: fit-content;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+.news-title{
+    font-weight: var(--message-font-weight);
+}
+.account-name{
+    color:rgba(0,0,0,0.6);
+    font-size: 0.8rem;
+}
+.account-feed{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 10px 5px;
+    border-bottom: 1px solid lightgray;
+    flex-wrap: wrap;
+}
+.account-picture{
+    height:40px;
+    object-fit: contain;
+}
+.account-info{
+    margin-left:5px;
+}
+.follow{
+    padding:5px;
+    text-align: center;
+    font-size: var(--message_font_size);
+    font-weight: 500;
+    margin-top:5px;
+    border-radius: 50px;
+    border:1px solid black;
+}
+.follow:hover{
+    background-color:var(--list_background);
+    cursor: pointer;
+}
+.news-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    padding-bottom: 0px;
+}
+.samll-screen{
+    display: none;
+}
+.option_text{
+    font-size: 0.9rem;
+    font-weight: var(--message_font_weight);
+}
+.dropdown{
+    position:relative;
+ 
+
+}
+
+.dropdown-content{
+    display:none;
+    height:fit-content;
+    padding:5px 0px;
+    position:absolute;
+    left:-190px;
+    
+    background-color: white;
+    border-radius:10px;
+    border:1px solid lightgray;
+    width: 250px;
+
+}
+
+.dropdown .title{
+    font-size: var(--message_title_size);
+    font-weight: 600;
+    padding:10px;
+    padding-bottom:5px;
+    
+}
+.list{
+    padding:8px 10px;
+    font-size: small;
+}
+
+.list:hover{
+    text-decoration: underline;
+    background-color: var(--list_background);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.bdr-bottom{
+    border-bottom: 0.2px solid rgba(0,0,0,.15);
+}
+.dropdown-profile{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 10px;
+}
+.profile-view-button{
+    border: 1px solid blue;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+
+
+@media  screen and (max-width:650px)  {
+    .sidebar, .activity{
+        display: none;
+    }
+    .mainbody{
+        margin:0px 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header{
+        margin:0px;
+        padding:10px;
+    }
+    .nav-text{
+        display: none;
+    }
+
+    .search-input{
+        display: none;
+    }
+    .search-box{
+        background-color: white  !important;
+    }
+
+    .height-right-2 > .nav-link, .right-nav-text{
+        display:none;
+
+    }
+    .small-screen{
+        display: block;
+        padding:5px;
+        border-radius:50px;
+        
+    }
+    .small-screen:hover{
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    .bi-grid-3x3-gap-fill{
+        display: none;
+    }
+
+    .post-box{
+        margin-top:20px;
+    }
+
+    .drop{
+     display: block!important;
+    }
+
+    body::-webkit-scrollbar {
+    
+      }
+}
+
+@media screen and (min-width:650px) and (max-width:1000px){
+    
+    .sidebar{display: none;}
+    .header{
+        margin:0px;
+        padding:10px;
+    }
+    .mainbody{
+        display: grid;
+        margin:0px 10px;
+        margin-top: 15px;
+        grid-template-columns: 1fr 0.5fr;
+        
+    }
+    .small-screen{
+        display: block;
+        padding:5px;
+        border-radius:50px;
+        
+    }
+    .search-input{
+        display: none;
+    }
+    .search-box{
+        background-color: white  !important;
+    }
+
+    .right-nav-text{
+        display:none;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:649px){
+    .jobs, .network{
+        display:none;
+    }
+}

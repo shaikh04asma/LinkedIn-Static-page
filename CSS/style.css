@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+:root{
+    --search:#dce6f1;
+    --header-text:rgba(0,0,0,.9);
+    --font-header-icon-size:1.6rem;
+    --para-font-size:0.8rem;
+    --para-color:rgba(0,0,0,.6);
+    --header-font-weight:600;
+    --para-font-weight:400;
+    --body-background:#e9e5df;
+}
+body{
+    background-color: var(--body-background);
+}
+
+.header{
+    padding: 5px 150px;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+    height:fit-content;
+}
+.header-left img{
+    object-fit: contain;
+
+}
+.header-left >.search-box{
+    background-color: var(--search);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.header-right-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.search-box >input[type=text]{
+    border: none;
+    outline:none;
+    background: transparent;
+    height:40px;
+    width:300px;
+    margin-left: 10px;
+}
+.header-right{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+}
+.nav-link{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#6e6558;
+    padding:0px 18px;
+}
+.nav-link:hover{
+    color:rgba(0,0,0);
+    cursor: pointer;
+}
+.bi{
+    font-size: var(--font-header-icon-size);
+}
+.nav-text{
+    font-size: var(--para-font-size);
+    padding:2px 0px;
+}
+.nav-icon{
+    position: relative;
+    font-size: var(--para-font-size);
+}
+.info{
+    position: absolute;
+    top:-6;
+    background-color: brown;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.bi-search{
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    margin-left: 20px;
+}
+.right-nav-text{
+    width:130px;
+    text-align: center;
+    font-size:0.8rem;
+
+}
+li{
+    list-style: none;
+}
